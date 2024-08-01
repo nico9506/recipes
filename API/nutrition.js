@@ -1,12 +1,13 @@
 const request = require("request");
-// var query = "1lb brisket and fries";
 
 const requestNutritionInfo = (query) => {
-  // let jsonArray = "";
+  let ans = "";
+
   const apikey = "ctMscaedI22RouVW6tmAAA==U8xHJFPExPrqXhZd";
+
   request.get(
     {
-      url: "https://api.api-ninjas.com/v1/nutrition?query=" + "egg",
+      url: "https://api.api-ninjas.com/v1/nutrition?query=" + query,
       headers: {
         "X-Api-Key": apikey,
       },
@@ -17,15 +18,15 @@ const requestNutritionInfo = (query) => {
         return console.error(
           "Error:",
           response.statusCode,
-          body.toString("utf8")
+          body.toString("utf8"),
         );
       else {
-        console.log("bedore the object");
-        return body;
+        // ans = body;
         // console.log(body);
-        // console.log(jsonArray[0].name);
+        console.log(`response: ${response.body}`);
+        return response.body;
       }
-    }
+    },
   );
 };
 
