@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/nico9506/recipies#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "request": "^2.88.2"
   }
 }
