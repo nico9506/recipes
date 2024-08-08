@@ -48,6 +48,7 @@
       .then((resp) => resp.json())
       .then(function (data) {
         console.log(data);
+        if(data.length == 0)alert("No results, order an uber.")
         title1.innerText = data[0].title;
         ingredients1.innerText = data[0].ingredients;
         instructions1.innerText = data[0].instructions;
