@@ -18,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/nico9506/recipies/issues"
   },
-  "homepage": "https://github.com/nico9506/recipies#readme",
-  "dependencies": {
-    "express": "^4.19.2"
-  }
+  "homepage": "https://github.com/nico9506/recipies#readme"
 }
