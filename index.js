@@ -32,6 +32,8 @@
     const servings2 = document.getElementById("servings2");
     const servings3 = document.getElementById("servings3");
 
+    const maincontainer = document.getElementById("recipes-container")
+
     const url = "https://api.api-ninjas.com/v1/recipe?query=" + query.value;
 
     fetch(url, {
@@ -60,6 +62,8 @@
         ingredients3.innerText = data[2].ingredients;
         instructions3.innerText = data[2].instructions;
         servings3.innerText = data[2].servings;
+
+        maincontainer.style.display = "flex"
       })
       .catch(function (error) {
         console.log(error);
